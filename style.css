@@ -10,6 +10,7 @@
 
 a {
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
 }
 img {
   display: block;
@@ -18,11 +19,12 @@ img {
 h1 {
   color: #72311a;
   font-family: "Sacramento", cursive;
-  font-size: 4.75rem;
+  font-size: 4.6rem;
 }
 p {
   color: #72311a;
   font-size: 1.25rem;
+  font-family: "Montserrat", sans-serif;
 }
 .symbol {
   font-family: "Font Awesome 5 Free";
@@ -32,7 +34,17 @@ p {
   font-family: "Font Awesome 5 Brands";
   font-weight: 400;
 }
-
+.botao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9a05b;
+  box-shadow: 0 8px 20px rgba(114, 49, 26, 0.15);
+  color: #72311a;
+  border: solid 1px;
+  border-color: #72311a;
+  border-radius: 999px;
+}
 /* configurações gerais*/
 
 /* header*/
@@ -58,6 +70,49 @@ nav a {
   color: #72311a;
 }
 .logo {
-  height: 162px;
+  height: 10.125rem;
 }
 /* header*/
+/* corpo*/
+
+main {
+  background-color: #c68484;
+  border-radius: 3.5rem;
+  box-shadow: 0 8px 20px rgba(114, 49, 26, 0.15);
+  border: solid 1px;
+  border-color: #72311a;
+}
+/* corpo*/
+
+/* hero*/
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.titSubBtn {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.btn1 {
+  height: auto;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 2rem 6rem;
+  width: fit-content;
+}
+.heroImg {
+  height: auto;
+  width: 65%;
+  max-width: 600px;
+  box-shadow: 0 8px 20px rgba(114, 49, 26, 0.15);
+  border: solid 1px;
+  border-color: #72311a;
+  border-radius: 20px;
+}
+
+/* hero*/
