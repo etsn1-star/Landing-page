@@ -116,3 +116,39 @@ main {
 }
 
 /* hero*/
+
+/* cards */
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #fff9f9;
+  color: #3a3a3a;
+  box-shadow: 0 8px 20px rgba(114, 49, 26, 0.15);
+  padding: 1rem 5rem;
+  font-size: 1rem;
+  flex: 1;
+  height: auto;
+  max-width: 350px;
+  border-radius: 20px;
+}
+.card h5 {
+  color: #72311a;
+  font-size: 2rem;
+  font-family: "Sacramento", cursive;
+}
+.symbol {
+  font-size: 4rem;
+}
+/*cards*/
