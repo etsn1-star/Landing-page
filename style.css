@@ -134,10 +134,8 @@ main {
   align-items: center;
   gap: 1rem;
   background-color: #fff9f9;
-  color: #3a3a3a;
   box-shadow: 0 8px 20px rgba(114, 49, 26, 0.15);
   padding: 0.5rem 5rem;
-  font-size: 1rem;
   flex: 1;
   height: auto;
   max-width: 350px;
@@ -150,6 +148,10 @@ main {
 }
 .symbol {
   font-size: 4rem;
+}
+.txtCard {
+  color: #3a3a3a;
+  font-size: 1rem;
 }
 /*cards*/
 
@@ -200,3 +202,36 @@ main {
 }
 
 /*Nossa Historia*/
+
+/*Produto*/
+.produto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.alinharHor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.produto h2 {
+  font-family: "Sacramento", cursive;
+  font-size: 4.875rem;
+  color: #72311a;
+}
+.txtVert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.imgProduto {
+  height: 100%;
+  width: 50%;
+  box-shadow: 0 8px 20px rgba(114, 49, 26, 0.15);
+  border-radius: 20px;
+}
+/*Produto*/
