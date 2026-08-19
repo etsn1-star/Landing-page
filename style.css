@@ -215,23 +215,62 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 .produto h2 {
   font-family: "Sacramento", cursive;
   font-size: 4.875rem;
   color: #72311a;
 }
-.txtVert {
+
+.qualidades {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.qualidades li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #72311a;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+}
+.qualidades li::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  width: 1.5rem;
+}
+.imgProduto {
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(114, 49, 26, 0.15);
+  border-radius: 20px;
+}
+.imgBtn {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
 }
-.imgProduto {
-  height: 100%;
-  width: 50%;
-  box-shadow: 0 8px 20px rgba(114, 49, 26, 0.15);
-  border-radius: 20px;
+
+.subBotao {
+  height: auto;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 2rem 4rem;
+  width: fit-content;
 }
+.preco {
+  font-family: "Sacramento", cursive;
+  font-size: 3rem;
+  color: #72311a;
+}
+
 /*Produto*/
