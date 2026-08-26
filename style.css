@@ -33,6 +33,7 @@ p {
 .rede {
   font-family: "Font Awesome 5 Brands";
   font-weight: 400;
+  font-size: 9rem;
 }
 .botao {
   display: flex;
@@ -223,6 +224,13 @@ main {
   color: #72311a;
 }
 
+.ladoQualidades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
 .qualidades {
   list-style: none;
   display: flex;
@@ -260,13 +268,13 @@ main {
   gap: 2rem;
 }
 
-.subBotao {
-  height: auto;
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 2rem 4rem;
-  width: fit-content;
+.seta {
+  color: #72311a;
+  font-size: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
+
 .preco {
   font-family: "Sacramento", cursive;
   font-size: 3rem;
@@ -274,3 +282,39 @@ main {
 }
 
 /*Produto*/
+
+/*Contato*/
+.contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+.organizarContatos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;
+}
+.contato h2 {
+  font-family: "Sacramento", cursive;
+  font-size: 4.875rem;
+  color: #72311a;
+}
+.redesSociais {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn4 {
+  height: auto;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 2rem 4rem;
+  width: fit-content;
+}
+
+/*Contato*/
