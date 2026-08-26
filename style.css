@@ -318,3 +318,47 @@ main {
 }
 
 /*Contato*/
+
+/*Footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff9f9;
+}
+.imgMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #72311a;
+  padding-left: 1rem;
+  padding-right: 10rem;
+}
+.imgMenu nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.imgMenu nav ul {
+  gap: 5rem;
+}
+.txtFrase {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+.copyright {
+  color: #72311a;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+.fraseFooter {
+  font-family: "Sacramento", cursive;
+  font-size: 2rem;
+  color: #72311a;
+}
+/*Footer*/
