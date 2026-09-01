@@ -46,6 +46,9 @@ p {
   border-color: #72311a;
   border-radius: 999px;
 }
+.menuHamburguer {
+  display: none;
+}
 /* configurações gerais*/
 
 /* header*/
@@ -362,3 +365,41 @@ footer {
   color: #72311a;
 }
 /*Footer*/
+/*Responsividade*/
+
+@media (max-width: 768px) {
+  /*Menu Hambúrguer*/
+  .menuHamburguer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .menuHamburguer span {
+    width: 40px;
+    height: 5px;
+    background-color: #72311a;
+  }
+  .menu {
+    display: none;
+    position: relative;
+  }
+
+  .menu.aberto {
+    display: block;
+  }
+  .menu.aberto ul {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff9f9;
+    z-index: 1000;
+    top: 100%;
+    right: 0;
+    position: absolute;
+  }
+  /*Menu Hamburguer*/
+}
+
+/*Responsividade*/
