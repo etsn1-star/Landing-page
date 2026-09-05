@@ -23,7 +23,7 @@ h1 {
 }
 p {
   color: #72311a;
-  font-size: clamp(0.9rem, 2vw, 1.25rem);
+  font-size: clamp(1rem, 1.5vw, 2rem);
   font-family: "Montserrat", sans-serif;
 }
 .symbol {
@@ -49,6 +49,7 @@ p {
 .menuHamburguer {
   display: none;
 }
+
 /* configurações gerais*/
 
 /* header*/
@@ -139,6 +140,7 @@ main {
   align-items: stretch;
   gap: 1.5rem;
   padding: 2rem;
+  flex-wrap: wrap;
 }
 .card {
   display: flex;
@@ -179,7 +181,7 @@ main {
 }
 .sobreNos h2 {
   font-family: "Sacramento", cursive;
-  font-size: 4.875rem;
+  font-size: clamp(3rem, 8vw, 4.875rem);
   color: #72311a;
 }
 
@@ -196,8 +198,10 @@ main {
 }
 .imagemSobreNos {
   height: auto;
-  width: 45%;
+  width: clamp(300px, 40vw, 500px);
   box-shadow: 0 8px 20px rgba(114, 49, 26, 0.15);
+  border: solid 1px;
+  border-color: #72311a;
   border-radius: 20px;
 }
 .texto {
@@ -210,9 +214,12 @@ main {
   flex-direction: row;
   justify-content: end;
   font-family: "Sacramento", cursive;
-  font-size: 3rem;
+  font-size: clamp(1.5rem, 6vw, 3rem);
   color: #72311a;
   padding-right: 5rem;
+}
+.fraseEfeito span {
+  font-size: clamp(1.5rem, 6vw, 4rem);
 }
 
 /*Nossa Historia*/
@@ -233,7 +240,7 @@ main {
 }
 .produto h2 {
   font-family: "Sacramento", cursive;
-  font-size: 4.875rem;
+  font-size: clamp(3rem, 8vw, 4.875rem);
   color: #72311a;
 }
 
@@ -443,8 +450,23 @@ footer {
     justify-content: center;
     align-items: center;
   }
+  .card {
+    width: min(100%, 300px);
+    padding: 4rem 2rem;
+  }
 
   /*cards*/
+  /*sobre nós*/
+
+  .imgTxt {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .fraseEfeito {
+    justify-content: start;
+  }
+  /*sobre nós*/
 }
 
 /*Responsividade*/
