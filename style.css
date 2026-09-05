@@ -145,10 +145,11 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 1rem;
   background-color: #fff9f9;
   box-shadow: 0 8px 20px rgba(114, 49, 26, 0.15);
-  padding: 0.5rem 5rem;
+  padding: clamp(4.5rem, 8vw, 5rem) 5rem;
   flex: 1;
   height: auto;
   max-width: 350px;
@@ -160,7 +161,7 @@ main {
   font-family: "Sacramento", cursive;
 }
 .symbol {
-  font-size: 4rem;
+  font-size: clamp(5rem, 8vw, 6rem);
 }
 .txtCard {
   color: #3a3a3a;
@@ -384,6 +385,7 @@ footer {
     border: none;
     cursor: pointer;
     color: #72311a;
+    font-size: 2.5rem;
   }
 
   .menu {
@@ -434,6 +436,15 @@ footer {
   }
 
   /*hero*/
+  /*cards*/
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*cards*/
 }
 
 /*Responsividade*/
