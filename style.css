@@ -33,7 +33,7 @@ p {
 .rede {
   font-family: "Font Awesome 5 Brands";
   font-weight: 400;
-  font-size: 9rem;
+  font-size: clamp(4.5rem, 15vw, 9rem);
 }
 .botao {
   display: flex;
@@ -216,7 +216,7 @@ main {
   font-family: "Sacramento", cursive;
   font-size: clamp(1.5rem, 6vw, 3rem);
   color: #72311a;
-  padding-right: 5rem;
+  padding-right: clamp(1.5rem, 8vw, 6rem);
 }
 .fraseEfeito span {
   font-size: clamp(1.5rem, 6vw, 4rem);
@@ -300,8 +300,9 @@ main {
 
 .preco {
   font-family: "Sacramento", cursive;
-  font-size: clamp(1.5rem, 1.5vw, 3rem);
+  font-size: clamp(1.5rem, 5vw, 3rem);
   color: #72311a;
+  text-align: center;
 }
 
 /*Produto*/
@@ -313,6 +314,7 @@ main {
   justify-content: center;
   align-items: center;
   padding-bottom: 3rem;
+  gap: 1.5rem;
 }
 .organizarContatos {
   display: flex;
@@ -323,7 +325,7 @@ main {
 }
 .contato h2 {
   font-family: "Sacramento", cursive;
-  font-size: 4.875rem;
+  font-size: clamp(3rem, 8vw, 4.875rem);
   color: #72311a;
 }
 .redesSociais {
@@ -334,9 +336,9 @@ main {
 }
 .btn4 {
   height: auto;
-  font-size: 1.5rem;
+  font-size: clamp(0.7rem, 1.5vw, 1.2rem);
   font-weight: bold;
-  padding: 2rem 4rem;
+  padding: 1.5rem clamp(2rem, 5vw, 4rem);
   width: fit-content;
 }
 
