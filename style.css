@@ -405,12 +405,7 @@ footer {
 
   /*Menu Hamburguer*/
   /*hero*/
-  .hero {
-    flex-direction: column;
-  }
-  .imgTxt {
-    flex-direction: column;
-  }
+
   /*hero*/
 }
 
