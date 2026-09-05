@@ -365,7 +365,7 @@ footer {
   justify-content: center;
 }
 .imgMenu nav ul {
-  gap: 5rem;
+  gap: clamp(1.5, 10vw, 5rem);
 }
 .txtFrase {
   width: 100%;
@@ -378,13 +378,16 @@ footer {
 }
 .copyright {
   color: #72311a;
-  font-size: 1rem;
+  font-size: clamp(0.5, 5vw, 1rem);
   font-family: "Montserrat", sans-serif;
 }
 .fraseFooter {
   font-family: "Sacramento", cursive;
-  font-size: 2rem;
+  font-size: clamp(1rem, 8vw, 2rem);
   color: #72311a;
+}
+.fraseFooter span {
+  font-size: clamp(1rem, 8vw, 2rem);
 }
 /*Footer*/
 /*Responsividade*/
@@ -472,6 +475,19 @@ footer {
     justify-content: start;
   }
   /*sobre nós*/
+  /*footer*/
+  .imgMenu {
+    justify-content: space-between;
+  }
+
+  .imgMenu nav ul {
+    gap: 1rem;
+  }
+  nav ul li a {
+    font-size: clamp(0.5rem, 2vw, 0.9375rem);
+  }
+
+  /*footer*/
 }
 
 /*Responsividade*/
