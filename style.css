@@ -7,7 +7,9 @@
 /* reset básico*/
 
 /* configurações gerais*/
-
+html {
+  scroll-behavior: smooth;
+}
 a {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
@@ -496,17 +498,20 @@ footer {
 
 /*Interatividade*/
 /*interatividade do hero*/
-.hero .botao {
+.hero .botao,
+.btn4 {
   animation: pulsar 2.5s ease-in-out infinite;
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease;
 }
 
-.hero .botao:hover {
+.hero .botao:hover,
+.btn4:hover {
   animation: none;
 }
-.hero .botao:active {
+.hero .botao:active,
+.btn4:active {
   transform: translateY(0);
 }
 .botao:hover {
@@ -551,5 +556,11 @@ nav ul li a:hover {
   transform: translateY(-20px);
 }
 /*cards*/
+/*Produto sumindo suavemente*/
+.imgProduto {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+/*produto sumindo suavemente*/
 
 /*Interatividade*/
