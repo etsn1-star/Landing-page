@@ -9,3 +9,17 @@ botaoMenu.addEventListener("click", () => {
     botaoMenu.innerHTML = "";
   }
 });
+
+const cards = document.querySelectorAll(".card");
+
+cards.forEach((card) => {
+  card.addEventListener("click", () => {
+    cards.forEach((outroCard) => {
+      if (outroCard !== card) {
+        outroCard.classList.remove("focado");
+      }
+    });
+
+    card.classList.toggle("focado");
+  });
+});

@@ -74,6 +74,7 @@ nav ul {
 }
 nav a {
   color: #72311a;
+  font-size: clamp(0.6rem, 2vw, 0.9375rem);
 }
 .logo {
   height: clamp(5rem, 12vw, 10.152rem);
@@ -365,7 +366,7 @@ footer {
   justify-content: center;
 }
 .imgMenu nav ul {
-  gap: clamp(1.5, 10vw, 5rem);
+  gap: clamp(1.5rem, 10vw, 5rem);
 }
 .txtFrase {
   width: 100%;
@@ -378,7 +379,7 @@ footer {
 }
 .copyright {
   color: #72311a;
-  font-size: clamp(0.5, 5vw, 1rem);
+  font-size: clamp(0.75rem, 1.5vw, 1rem);
   font-family: "Montserrat", sans-serif;
 }
 .fraseFooter {
@@ -484,10 +485,71 @@ footer {
     gap: 1rem;
   }
   nav ul li a {
-    font-size: clamp(0.5rem, 2vw, 0.9375rem);
+    font-size: clamp(0.6rem, 2vw, 0.9375rem);
+    white-space: nowrap;
   }
 
   /*footer*/
 }
 
 /*Responsividade*/
+
+/*Interatividade*/
+/*interatividade do hero*/
+.hero .botao {
+  animation: pulsar 2.5s ease-in-out infinite;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.hero .botao:hover {
+  animation: none;
+}
+.hero .botao:active {
+  transform: translateY(0);
+}
+.botao:hover {
+  background-color: #e2ad6d;
+  box-shadow: 0 10px 25px rgba(114, 49, 26, 0.22);
+  transform: translateY(-2px);
+}
+/*interatividade do hero*/
+/*interatividade dos links*/
+nav ul li a {
+  transition:
+    color 0.2s ease,
+    text-shadow 0.2s ease;
+}
+nav ul li a:hover {
+  color: #a35b3c;
+  text-shadow: 0 10px 25px rgba(114, 49, 26, 0.22);
+}
+/*interatividade dos links*/
+
+/*animação de pulsar*/
+@keyframes pulsar {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+}
+/*animação de pulsar*/
+
+/*cards*/
+.card {
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.04);
+}
+.card.focado {
+  transform: translateY(-20px);
+}
+/*cards*/
+
+/*Interatividade*/
