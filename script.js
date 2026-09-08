@@ -1,3 +1,4 @@
+/*Menu Hamburguer*/
 const botaoMenu = document.querySelector(".menuHamburguer");
 const menu = document.querySelector(".menu");
 
@@ -9,7 +10,9 @@ botaoMenu.addEventListener("click", () => {
     botaoMenu.innerHTML = "";
   }
 });
+/*Menu Hamburguer*/
 
+/*Foco no card*/
 const cards = document.querySelectorAll(".card");
 
 cards.forEach((card) => {
@@ -23,7 +26,9 @@ cards.forEach((card) => {
     card.classList.toggle("focado");
   });
 });
+/*Foco no card*/
 
+/*Carrossel de imagens Produto*/
 const imagem = document.querySelector(".imgProduto");
 const setaEsquerda = document.querySelector(".esquerda");
 const setaDireita = document.querySelector(".direita");
@@ -60,5 +65,24 @@ function trocarImagem(novoIndice) {
     imagem.src = imagens[imagemAtual];
     imagem.style.opacity = 1;
   }, 300);
-  console.log(imagemAtual);
 }
+
+/*Carrossel de imagens Produto*/
+
+/*Direcionar para whatsApp*/
+const botaoHero = document.querySelector(".btn1");
+const botaoContatos = document.querySelector(".btn4");
+
+enviarMsg(botaoHero);
+enviarMsg(botaoContatos);
+
+function enviarMsg(elementoLink) {
+  const mensagem =
+    "Olá! 💕 Vi a Tortiletes da Ju e fiquei com vontade de experimentar! Gostaria de saber mais sobre o produto e fazer uma encomenda. 🍪✨";
+  const numero = 558291018638;
+  const link = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+
+  elementoLink.href = link;
+}
+
+/*Direcionar para whatsApp*/
