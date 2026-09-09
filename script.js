@@ -86,3 +86,22 @@ function enviarMsg(elementoLink) {
 }
 
 /*Direcionar para whatsApp*/
+
+/*Redirecionar para redes sociais*/
+
+redirecionar("https://wa.me/558291018638");
+redirecionar(
+  "https://www.instagram.com/_.julianasnt?stkn=MXJnNnNleHFyYno0cw==",
+);
+
+function redirecionar(link) {
+  const botoes = document.querySelectorAll(".redeSociais");
+
+  botoes.forEach((botao) => {
+    botao.addEventListener("click", () => {
+      window.location.href = link;
+    });
+  });
+}
+
+/*Redirecionar para redes sociais*/

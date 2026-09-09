@@ -35,7 +35,8 @@ p {
 .rede {
   font-family: "Font Awesome 5 Brands";
   font-weight: 400;
-  font-size: clamp(4.5rem, 15vw, 9rem);
+  font-size: clamp(2rem, 15vw, 9rem);
+  color: #72311a;
 }
 .botao {
   display: flex;
@@ -50,6 +51,11 @@ p {
 }
 .menuHamburguer {
   display: none;
+}
+
+.biscoito {
+  width: clamp(500px, 60vw, 1500px);
+  margin: 2rem auto;
 }
 
 /* configurações gerais*/
@@ -324,18 +330,24 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 65%;
+  width: 80%;
 }
 .contato h2 {
   font-family: "Sacramento", cursive;
   font-size: clamp(3rem, 8vw, 4.875rem);
   color: #72311a;
 }
-.redesSociais {
+.redeSociais {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  background-color: #fff9f9;
+  box-shadow: 0 8px 20px rgba(114, 49, 26, 0.15);
+  border-radius: 20px;
+  border: solid 1px #72311a;
+  padding: clamp(0.5rem, 2vw, 0.7rem) clamp(0.5rem, 3vw, 1.5rem);
 }
 .btn4 {
   height: auto;
@@ -561,6 +573,11 @@ nav ul li a:hover {
   opacity: 1;
   transition: opacity 0.3s ease;
 }
+/*contatos*/
+.organizarContatos .redeSociais p {
+  font-size: clamp(0.5, 3vw, 1.3rem);
+}
+/*contatos*/
 /*produto sumindo suavemente*/
 
 /*Interatividade*/
