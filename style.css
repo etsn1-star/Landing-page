@@ -241,11 +241,32 @@ main {
   align-items: center;
 }
 .alinharHor {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
+  justify-items: center;
   gap: 1rem;
+}
+
+.seta.esquerda {
+  grid-column: 1;
+  grid-row: auto;
+}
+.qualidadesEsquerda {
+  grid-column: 1;
+  grid-row: auto;
+}
+.imgBtn {
+  grid-column: 2;
+  grid-row: auto;
+}
+.seta.direita {
+  grid-column: 3;
+  grid-row: 1;
+}
+.qualidadesDireita {
+  grid-column: 3;
+  grid-row: auto;
 }
 .produto h2 {
   font-family: "Sacramento", cursive;
@@ -253,13 +274,6 @@ main {
   color: #72311a;
 }
 
-.ladoQualidades {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2.5rem;
-}
 .qualidades {
   list-style: none;
   display: flex;
@@ -419,11 +433,24 @@ footer {
   }
 
   .menu {
-    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+
+    transition:
+      opacity 0.5s ease,
+      transform 0.5s ease,
+      visibiliry 0.5s ease;
   }
 
   .menu.aberto {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
   }
   .menu.aberto ul {
     display: flex;
@@ -432,9 +459,6 @@ footer {
     padding: 1rem;
     background-color: #fff9f9;
     z-index: 1000;
-    top: 100%;
-    right: 0;
-    position: absolute;
     border: solid 1px;
     border-color: #72311a;
     border-radius: 20px;
@@ -477,6 +501,9 @@ footer {
     width: min(100%, 300px);
     padding: 4rem 2rem;
   }
+  .card.focado {
+    transform: scale(1.02);
+  }
 
   /*cards*/
   /*sobre nós*/
@@ -507,8 +534,36 @@ footer {
 
   /*produto*/
   .alinharHor {
-    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "esquerda direita"
+      "imagem imagem"
+      "listaEsquerda listaEsquerda"
+      "listaDireita listaDireita";
+    gap: 1rem;
+    row-gap: 2rem;
   }
+  .seta.esquerda {
+    grid-area: esquerda;
+  }
+  .seta.direita {
+    grid-area: direita;
+  }
+  .imgBtn {
+    grid-area: imagem;
+  }
+  .qualidadesEsquerda {
+    grid-area: listaEsquerda;
+    justify-self: start;
+  }
+  .qualidadesDireita {
+    grid-area: listaDireita;
+    justify-self: start;
+  }
+  .imgProduto {
+    width: min(85vw, 600px);
+  }
+
   /*produto*/
 }
 
@@ -581,7 +636,7 @@ nav ul li a:hover {
 }
 /*contatos*/
 .organizarContatos .redeSociais p {
-  font-size: clamp(0.5, 3vw, 1.3rem);
+  font-size: clamp(0.5rem, 3vw, 1.3rem);
 }
 /*contatos*/
 /*produto sumindo suavemente*/
