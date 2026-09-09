@@ -504,6 +504,12 @@ footer {
   }
 
   /*footer*/
+
+  /*produto*/
+  .alinharHor {
+    display: grid;
+  }
+  /*produto*/
 }
 
 /*Responsividade*/
