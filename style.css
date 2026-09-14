@@ -57,6 +57,9 @@ p {
   width: clamp(500px, 60vw, 1500px);
   margin: 2rem auto;
 }
+button:hover {
+  cursor: pointer;
+}
 
 /* configurações gerais*/
 
@@ -506,7 +509,7 @@ footer {
     padding: 4rem 2rem;
   }
   .card.focado {
-    transform: translateY(0px), scale(1.02);
+    transform: translateY(0px) scale(1.02);
   }
 
   /*cards*/
