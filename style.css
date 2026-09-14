@@ -409,14 +409,18 @@ footer {
   color: #72311a;
   font-size: clamp(0.75rem, 1.5vw, 1rem);
   font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
 .fraseFooter {
   font-family: "Sacramento", cursive;
   font-size: clamp(1rem, 8vw, 2rem);
   color: #72311a;
+  text-align: center;
+  font-weight: 600;
 }
 .fraseFooter span {
   font-size: clamp(1rem, 8vw, 2rem);
+  text-align: center;
 }
 /*Footer*/
 /*Responsividade*/
@@ -502,7 +506,7 @@ footer {
     padding: 4rem 2rem;
   }
   .card.focado {
-    transform: scale(1.02);
+    transform: translateY(0px), scale(1.02);
   }
 
   /*cards*/
@@ -512,6 +516,13 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .texto {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .texto p {
+    text-align: center;
   }
   .fraseEfeito {
     justify-content: start;
@@ -528,6 +539,12 @@ footer {
   nav ul li a {
     font-size: clamp(0.6rem, 2vw, 0.9375rem);
     white-space: nowrap;
+  }
+  .fraseFooter {
+    font-size: clamp(1rem, 4vw, 1.5rem);
+  }
+  .fraseFooter span {
+    font-size: clamp(1rem, 4vw, 1.5rem);
   }
 
   /*footer*/
