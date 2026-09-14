@@ -229,9 +229,12 @@ main {
   font-size: clamp(1.5rem, 6vw, 3rem);
   color: #72311a;
   padding-right: clamp(1.5rem, 8vw, 6rem);
+  text-align: center;
+  font-weight: 600;
 }
 .fraseEfeito span {
   font-size: clamp(1.5rem, 6vw, 4rem);
+  text-align: center;
 }
 
 /*Nossa Historia*/
@@ -426,6 +429,84 @@ footer {
   text-align: center;
 }
 /*Footer*/
+
+/*Interatividade*/
+/*interatividade do hero*/
+.hero .botao,
+.btn4 {
+  animation: pulsar 2.5s ease-in-out infinite;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.hero .botao:hover,
+.btn4:hover {
+  animation: none;
+}
+.hero .botao:active,
+.btn4:active {
+  transform: translateY(0);
+}
+.botao:hover {
+  background-color: #e2ad6d;
+  box-shadow: 0 10px 25px rgba(114, 49, 26, 0.22);
+  transform: translateY(-2px);
+}
+/*interatividade do hero*/
+/*interatividade dos links*/
+nav ul li a {
+  transition:
+    color 0.2s ease,
+    text-shadow 0.2s ease;
+}
+nav ul li a:hover {
+  color: #a35b3c;
+  text-shadow: 0 10px 25px rgba(114, 49, 26, 0.22);
+}
+/*interatividade dos links*/
+
+/*animação de pulsar*/
+@keyframes pulsar {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+}
+/*animação de pulsar*/
+
+/*cards*/
+.card {
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.04);
+}
+.card.focado {
+  transform: translateY(-20px);
+}
+/*cards*/
+/*Produto sumindo suavemente*/
+.imgProduto {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+/*contatos*/
+.organizarContatos .redeSociais p {
+  font-size: clamp(0.5rem, 3vw, 1.3rem);
+}
+.redeSociais:hover {
+  background-color: #f8eeee;
+}
+/*contatos*/
+/*produto sumindo suavemente*/
+
+/*Interatividade*/
+
 /*Responsividade*/
 
 @media (max-width: 768px) {
@@ -451,7 +532,7 @@ footer {
     transition:
       opacity 0.5s ease,
       transform 0.5s ease,
-      visibiliry 0.5s ease;
+      visibility 0.5s ease;
   }
 
   .menu.aberto {
@@ -588,77 +669,3 @@ footer {
 }
 
 /*Responsividade*/
-
-/*Interatividade*/
-/*interatividade do hero*/
-.hero .botao,
-.btn4 {
-  animation: pulsar 2.5s ease-in-out infinite;
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-.hero .botao:hover,
-.btn4:hover {
-  animation: none;
-}
-.hero .botao:active,
-.btn4:active {
-  transform: translateY(0);
-}
-.botao:hover {
-  background-color: #e2ad6d;
-  box-shadow: 0 10px 25px rgba(114, 49, 26, 0.22);
-  transform: translateY(-2px);
-}
-/*interatividade do hero*/
-/*interatividade dos links*/
-nav ul li a {
-  transition:
-    color 0.2s ease,
-    text-shadow 0.2s ease;
-}
-nav ul li a:hover {
-  color: #a35b3c;
-  text-shadow: 0 10px 25px rgba(114, 49, 26, 0.22);
-}
-/*interatividade dos links*/
-
-/*animação de pulsar*/
-@keyframes pulsar {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.04);
-  }
-}
-/*animação de pulsar*/
-
-/*cards*/
-.card {
-  transition: transform 0.5s ease;
-  cursor: pointer;
-}
-.card:hover {
-  transform: scale(1.04);
-}
-.card.focado {
-  transform: translateY(-20px);
-}
-/*cards*/
-/*Produto sumindo suavemente*/
-.imgProduto {
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-/*contatos*/
-.organizarContatos .redeSociais p {
-  font-size: clamp(0.5rem, 3vw, 1.3rem);
-}
-/*contatos*/
-/*produto sumindo suavemente*/
-
-/*Interatividade*/
